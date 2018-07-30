@@ -9,7 +9,7 @@
 
 + Easy LESS扩展配置全局配置，全局设置 out 为 false, 避免与自己的其他项目编译工具有冲突。
 
-```json
+```javascript
 {
   "less.compile": {
     "out":       false, // false => 不自动输出
@@ -20,7 +20,7 @@
 }
 ```
 
-+ 文件机构 & 页面(例app.less)添加设置
++ 文件机构 & 页面(例app.less)设置
 
 ```
 └── src
@@ -32,7 +32,7 @@
 
 `app.less` 文件内顶部添加 `// out: app.wxss`这样在保存时候插件会自动将 app.less 内容编译到 app.wxss 文件中。同理其他的页面也是类似的(在同级的页面添加一个输出设置)，这样在写样式的时候就可以使用less相关语法，也可以提高开发效率。
 
-**更多相关配置说明[https://marketplace.visualstudio.com/items?itemName=mrcrowl.easy-less#overview](https://marketplace.visualstudio.com/items?itemName=mrcrowl.easy-less#overview)**
+**[更多相关配置说明](https://marketplace.visualstudio.com/items?itemName=mrcrowl.easy-less#overview)**
 
 
 参考阅读
