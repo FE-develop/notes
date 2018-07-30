@@ -33,3 +33,9 @@
 `app.less` 文件内顶部添加 `// out: app.wxss`这样在保存时候插件会自动将 app.less 内容编译到 app.wxss 文件中。同理其他的页面也是类似的(在同级的页面添加一个输出设置)，这样在写样式的时候就可以使用less相关语法，也可以提高开发效率。
 
 **更多相关配置说明[https://marketplace.visualstudio.com/items?itemName=mrcrowl.easy-less#overview](https://marketplace.visualstudio.com/items?itemName=mrcrowl.easy-less#overview)**
+
+
+参考阅读
+
++ https://www.zybuluo.com/hotjp/note/715740
++ https://marketplace.visualstudio.com/items?itemName=mrcrowl.easy-less#overview
