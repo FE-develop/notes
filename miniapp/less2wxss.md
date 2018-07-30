@@ -1,10 +1,10 @@
 # vscode 编译less -> wxss
 
-现在微信开发工具太多，想微信原生的开发方式来开发。但是写样式又太繁还是想借助一些预编译的方式来方便开发，于是乎就Easy LESS 就非常适合了。
+现在微信小程序开发框架太多，想用微信原生的开发方式来开发。但是写样式又太繁还是想借助一些预编译语言来方便开发，于是乎就Easy LESS 就非常适合了。
 
-1. `npm i -g less` 全局安装less
-2. 开发工具: [vscode](https://code.visualstudio.com/)
-3. 插件安装: [Easy LESS](https://marketplace.visualstudio.com/items?itemName=mrcrowl.easy-less#overview)
+1. `npm i -g less` 全局安装less;
+2. 开发工具: [vscode](https://code.visualstudio.com/);
+3. 插件安装: [Easy LESS](https://marketplace.visualstudio.com/items?itemName=mrcrowl.easy-less#overview);
 
 
 + Easy LESS扩展配置全局配置，全局设置 out 为 false, 避免与自己的其他项目编译工具有冲突。
@@ -31,6 +31,21 @@
 ```
 
 `app.less` 文件内顶部添加 `// out: app.wxss`这样在保存时候插件会自动将 app.less 内容编译到 app.wxss 文件中。同理其他的页面也是类似的(在同级的页面添加一个输出设置)，这样在写样式的时候就可以使用less相关语法，也可以提高开发效率。
+
+app.less
+
+```less
+// out: app.wxss
+.container {
+  font-size: 28rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+```
 
 **[更多相关配置说明](https://marketplace.visualstudio.com/items?itemName=mrcrowl.easy-less#overview)**
 
